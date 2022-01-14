@@ -11,3 +11,7 @@ resource "kubernetes_namespace" "demo" {
     name = "${var.namespace}"
   }
 }
+
+output "new_namespace" {
+  value = "${var.namespace}"
+}
