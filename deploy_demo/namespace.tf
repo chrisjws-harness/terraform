@@ -8,6 +8,6 @@ resource "kubernetes_namespace" "demo" {
       mylabel = "ephemeral"
     }
 
-    name = "terraform-eph-namespace"
+    name = "${var.namespace}"
   }
 }
